@@ -38,10 +38,17 @@ class Card extends React.Component {
         document.querySelectorAll('.fa-circle')[this.props.index].style.display = '';
         document.querySelectorAll('.fa-chevron-circle-up')[this.props.index].style.display = '';
         document.querySelectorAll('.card')[this.props.index].style.zIndex = '';
+        document.querySelectorAll('.card')[this.props.index].style.boxShadow = '2px 2px 15px #ccc';
+        document.querySelectorAll('.card')[this.props.index].style.transform = 'scale(1)';
         document.querySelector('.black').style.display = 'none';
         this.setState({
             edit: false
         })
+    }
+
+    saveEditHandler = () => {
+        this.closeEditHandler();
+        this.props.edit(this.props.index);
     }
     
     render() {
@@ -73,7 +80,7 @@ class Card extends React.Component {
             console.log(descText.value)
             functions = (
                 <div className="side-buttons">
-                    <i className="fas fa-check" onClick={this.closeEditHandler}></i>
+                    <i className="fas fa-check" onClick={this.saveEditHandler}></i>
                     <i className="fas fa-times" onClick={this.closeEditHandler}></i>
                 </div>
             )

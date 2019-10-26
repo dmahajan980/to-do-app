@@ -42,7 +42,7 @@ class App extends React.Component {
 
   editHandler = index => {
     let list = this.state.cards;
-    console.log(index)
+    console.log(index);
     list[index].title = document.querySelectorAll('.i-task')[index].value;
     list[index].desc = document.querySelectorAll('.i-desc')[index].value;
     console.log(list)
