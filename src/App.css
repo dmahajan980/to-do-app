@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+
+.head-box {
+  width: 150vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 25%, #9599E2 75%);
+  border-radius: 85%;
+  position: fixed;
+  left: -25vw;
+  top: -15vh;
+  z-index: 4;
+}
+
+.container {
+  position: relative;
+  top: 8vh;
+  margin: 0 auto;
+}
+
+.headline {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin: auto;
+  color: white;
+}
+
+.card-list {
+  margin-top: 40vh;
+  margin-bottom: 8vh;
+}
+
+.black {
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  /* background: transparent; */
+  opacity: 0.4;
+}

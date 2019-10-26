@@ -1,0 +1,113 @@
+.card {
+    width: 50vw;
+    margin: 5px auto 30px;
+    box-sizing: border-box;
+    padding: 20px 90px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 2px 2px 10px #ccc;
+    transition: transform 300ms ease-in-out, box-shadow 300ms linear;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+.task {
+    color: white;
+    font-size: 1.8rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.sub {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-right: 30px;
+    background: transparent;
+    outline: none;
+    border: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    resize: none;
+    text-align: left;
+    max-width: 30vw;
+}
+
+.i-desc {
+    width: 30vw;
+}
+
+.circle {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-buttons {
+    display: flex;
+    font-size: 1.3rem;
+    color: white;
+    border-radius: 50%;
+    margin-top: 1em;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.fa-pen, .fa-check {
+    margin-right: 20px;
+}
+
+.edit {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.side-buttons > .fas {
+    color: rgb(235, 235, 250);
+    transition: color 100ms linear;
+}
+
+.side-buttons > .fas:hover {
+    color: white;
+}
+
+.fa-check, .fa-times {
+    font-size: 1.6rem;
+}
+
+@media (max-width: 500px) {
+    .card {
+        padding: 1vh 5vw;
+        width: 90vw;
+    }
+
+    .i-task {
+        width: 100%;
+    }
+
+    .desc {
+        max-width: 65%;
+    }
+
+    .i-desc {
+        width: 65%;
+    }
+}
