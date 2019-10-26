@@ -42,7 +42,6 @@ class Card extends React.Component {
         this.setState({
             edit: false
         })
-        this.props.edit();
     }
     
     render() {
@@ -75,7 +74,7 @@ class Card extends React.Component {
             functions = (
                 <div className="side-buttons">
                     <i className="fas fa-check" onClick={this.closeEditHandler}></i>
-                    <i className="fas fa-times"></i>
+                    <i className="fas fa-times" onClick={this.closeEditHandler}></i>
                 </div>
             )
         }
